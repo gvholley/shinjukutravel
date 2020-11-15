@@ -10,6 +10,8 @@
 @import "components/index";
 @import "pages/index";
 
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
 body {
   background-image: url(/images/bgsjk.jpg);
   background-size: cover;
@@ -21,19 +23,34 @@ body {
 
 aside {
   height: 100vh;
-  width: 200px;
-  background-color: black;
+  width: 225px;
+  background: rgb(8,8,8);
+  background: -moz-linear-gradient(180deg, rgba(8,8,8,1) 0%, rgba(55,52,58,1) 50%, rgba(50,46,51,1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(8,8,8,1) 0%, rgba(55,52,58,1) 50%, rgba(50,46,51,1) 100%);
+  background: linear-gradient(180deg, rgba(8,8,8,1) 0%, rgba(55,52,58,1) 50%, rgba(50,46,51,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#080808",endColorstr="#322e33",GradientType=1);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 2em;
+  border-right: 2px solid #28AFB0;
 }
 
 aside a {
   color: white;
-  font-size: 1em;
+  font-size: 150%;
   text-decoration: none;
   margin: 1em;
+  letter-spacing: 1px;
+  font-family: 'Mukta', sans-serif;
+  &:hover {
+    color: #28AFB0;
+    text-decoration: none;
+  }
+}
+
+li{
+  margin: 50px 0;
 }
 
 aside ul {
@@ -41,12 +58,6 @@ aside ul {
   list-style-type: none;
 }
 
-.special {
-  background-color: #FEAB51;
-  color: black;
-  text-align: center;
-  padding: 10px;
-}
 
 main {
   color: white;
@@ -56,12 +67,28 @@ main {
 
 main h1 {
   margin: 0;
+  font-size: 200%;
+  font-family: 'Mukta', sans-serif;
 }
 
 main h3 {
-  color: #feab51;
+  color: #28AFB0;
   margin: 0;
+  font-size: 100%;
+  font-family: 'Mukta', sans-serif;
 }
+
+.content {
+  font-size: 1.5em;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px 5px 30px 5px;
+  border-radius: 30px;
+}
+
 
 @media screen and (max-width: 768px) {
   body {
