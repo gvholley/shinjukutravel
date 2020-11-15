@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700|Work+Sans:400,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+.alert {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  z-index: 1000; }
+
+.avatar {
+  width: 40px;
+  border-radius: 50%; }
+
+.avatar-large {
+  width: 56px;
+  border-radius: 50%; }
+
+.avatar-bordered {
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border: white 1px solid; }
+
+.avatar-square {
+  width: 40px;
+  border-radius: 0px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  border: white 1px solid; }
+
+.navbar-lewagon {
+  justify-content: space-between;
+  background: white; }
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0; }
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px; }
+
+body {
+  background-image: url(../images/bgsjk.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  margin: 0;
+  display: flex; }
+
+aside {
+  height: 100vh;
+  width: 225px;
+  background: #080808;
+  background: -moz-linear-gradient(180deg, #080808 0%, #37343a 50%, #322e33 100%);
+  background: -webkit-linear-gradient(180deg, #080808 0%, #37343a 50%, #322e33 100%);
+  background: linear-gradient(180deg, #080808 0%, #37343a 50%, #322e33 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#080808",endColorstr="#322e33",GradientType=1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2em;
+  border-right: 2px solid #28AFB0; }
+
+aside a {
+  color: white;
+  font-size: 150%;
+  text-decoration: none;
+  margin: 1em;
+  letter-spacing: 1px;
+  font-family: 'Mukta', sans-serif; }
+  aside a:hover {
+    color: #28AFB0;
+    text-decoration: none; }
+
+li {
+  margin: 50px 0; }
+
+aside ul {
+  padding: 0;
+  list-style-type: none; }
+
+main {
+  color: white;
+  font-size: 2em;
+  padding: 3em; }
+
+main h1 {
+  margin: 0;
+  font-size: 200%;
+  font-family: 'Mukta', sans-serif; }
+
+main h3 {
+  color: #28AFB0;
+  margin: 0;
+  font-size: 100%;
+  font-family: 'Mukta', sans-serif; }
+
+.content {
+  font-size: 1.5em;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 5px 5px 30px 5px;
+  border-radius: 30px; }
+
+@media screen and (max-width: 768px) {
+  body {
+    flex-direction: column-reverse;
+    justify-content: space-between; }
+
+  main {
+    min-height: 60vh; }
+
+  aside {
+    height: auto;
+    width: 100%; }
+
+  .special {
+    display: none; }
+
+  aside ul {
+    display: flex;
+    flex-wrap: wrap; } }
